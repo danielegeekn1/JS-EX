@@ -1,0 +1,45 @@
+
+const myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
+
+/* var pi = 3,14; // variable with number */
+var pi = "3,14"; // variable with string
+
+/*strict equality function */
+if (pi ===  3,14) {
+    console.log ("yes, that is pi");
+}
+else {
+    console.log ("no, that is not pi");
+}
+
+/* not equal function */
+
+var x = 10, y = 15;
+document.write (!(x == y)); // it means x is not equal to y, in this case it will return true on the page
+
+/*custom function */
+function multiply(num1,num2) {
+    let result = num1 * num2;
+    return result;
+  }
+
+  /* event clicker on JS */
+  const myImage = document.querySelector('img');
+
+myImage.onclick = () => {
+  const mySrc = myImage.getAttribute('src');
+  if (mySrc === 'images/firefox-icon.png') {
+    myImage.setAttribute('src','images/firefox2.png');
+  } else {
+    myImage.setAttribute('src','images/firefox-icon.png');
+  }
+}
+/* with this syntax if mrSrc variable is different than the img selected, the img that will appear is firefox1, otherwise firefox2 */
+
+
+const myNumber = Math.random();
+// the random() function generates a random number between
+// 0 and up to but not including 1, and returns that number
+
+  
