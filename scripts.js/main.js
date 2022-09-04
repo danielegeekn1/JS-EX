@@ -50,4 +50,7 @@ strNewValue = (strValue = '42') ? 'Quarantadue': 'un altro numero';
 else if (strValue === '45'){strNewValue ='quarantacinque';}
 else {strNewValue = 'un altro numero';}
 
-  
+  /*ciclo while con do, per indicare un'azione da fare prima, poi il while per indicare quando farla */
+  counter = 0;
+  do {console.log ('valore di counter (do while)', counter);counter++;} 
+  while (counter === 0);
