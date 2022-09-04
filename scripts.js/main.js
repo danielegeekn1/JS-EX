@@ -42,4 +42,12 @@ const myNumber = Math.random();
 // the random() function generates a random number between
 // 0 and up to but not including 1, and returns that number
 
+/*shortcut per la funzione con if e else, in questo caso ? corrisponde a if, mentre i : corrispondono a else */
+strNewValue = (strValue = '42') ? 'Quarantadue': 'un altro numero';
+
+/* se volessi creare più di 2 condizioni possiamo usare anche else if */
+ if (strValue === '42'){strNewValue = 'quarantadue';}
+else if (strValue === '45'){strNewValue ='quarantacinque';}
+else {strNewValue = 'un altro numero';}
+
   
