@@ -54,3 +54,11 @@ else {strNewValue = 'un altro numero';}
   counter = 0;
   do {console.log ('valore di counter (do while)', counter);counter++;} 
   while (counter === 0);
+
+  /*OPERATORI DI CONFRONTO*/
+  console.log (42>10); // in qst caso il 42 sarà confrontato in modo che sia maggiore di 10 
+  //ovviamente in questo contesto verrà reinderizzato true, in quanto ovviamente 42 è maggiore di 10
+
+  /*confronto fra valori in stringa*/
+  console.log ('S' > 'B'); // in questo caso S viene dopo B nell'alfabete e è quindi considerato un valore maggiore
+  
