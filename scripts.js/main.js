@@ -71,9 +71,17 @@ if (surname === 'Sciuti' || surname ==='Ortis' || isHero); console.log ( 'Qualcu
 //in questo caso diciam che se il valore della variabile è Sciuti o Ortis, allora verrà applicato il valore isHero, che è vero e erra reinderizzata la frase
 
 /*operatore and "&&"*/
-let age =25;
+let age=25;
 if (age >=18 && age <40) {document.write ('You can come to the party');}
 else {document.write ('You aint coming');}
 // in questo caso se entrambe le condizioni sono valide allora verrà reinderizata la prima frase, altrimenti la seconda
 
+/*while loop*/
+var myAge= 5;
+while (age < 10){console.log ('Your age is less than 10');
+age++;}
+document.write ('You are a child');
+//in this case the age++ add a number to 5 until it overcomes the number 10 and so make the condition of document write possible
 
+/*for loops*/
+for ( age=5; age < 10; age++) {console.log ('Your age is less than 10');} document.write ('you are old');
