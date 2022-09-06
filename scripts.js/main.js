@@ -61,4 +61,12 @@ else {strNewValue = 'un altro numero';}
 
   /*confronto fra valori in stringa*/
   console.log ('S' > 'B'); // in questo caso S viene dopo B nell'alfabete e è quindi considerato un valore maggiore
-  
+
+/* operatori logici */
+/*operatore 'or' segnato con '||' */
+/*con questo possiamo determinare che una variabile abbia un valore che possa essere uno piuttosto che altri segnati, anche in fase di confronto*/
+let surname='Sciuti';
+let isHero=true;
+if (surname === 'Sciuti' || surname ==='Ortis' || isHero); console.log ( 'Qualcuno è un’eroe');
+//in questo caso diciam che se il valore della variabile è Sciuti o Ortis, allora verrà applicato il valore isHero, che è vero e erra reinderizzata la frase
+
