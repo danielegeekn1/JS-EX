@@ -70,3 +70,10 @@ let isHero=true;
 if (surname === 'Sciuti' || surname ==='Ortis' || isHero); console.log ( 'Qualcuno è un’eroe');
 //in questo caso diciam che se il valore della variabile è Sciuti o Ortis, allora verrà applicato il valore isHero, che è vero e erra reinderizzata la frase
 
+/*operatore and "&&"*/
+let age =25;
+if (age >=18 && age <40) {document.write ('You can come to the party');}
+else {document.write ('You aint coming');}
+// in questo caso se entrambe le condizioni sono valide allora verrà reinderizata la prima frase, altrimenti la seconda
+
+
