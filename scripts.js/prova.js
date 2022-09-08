@@ -1,6 +1,6 @@
 console.log 
-Console.info 
-Console.debug
+console.info 
+console.debug
 
 
 console.log ('Run JS');
