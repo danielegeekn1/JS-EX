@@ -85,3 +85,9 @@ document.write ('You are a child');
 
 /*for loops*/
 for ( age=5; age < 10; age++) {console.log ('Your age is less than 10');} document.write ('you are old');
+
+/*for each loop*/
+/*let names=['Anja', 'Dave', 'Daniele']
+names.forEach(nameS {console.log(nameS + 'is the best')});*/
+
+
