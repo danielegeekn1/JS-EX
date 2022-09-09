@@ -50,3 +50,10 @@ const calcVol = (radius)  => {
 };
 const vol = calcVol (5);
 console.log ('area is:', area);// in this case we assigned vol to the function and said that the browser should log the result of the function afther the string area is
+
+//if we have only one parameter we can remove the parentesys in this way
+const calcSalary = salary  => {
+    return 100 + salary*2;
+};
+const Salary = calcSalary(600);
+console.log ('Your salay is:', Salary);
