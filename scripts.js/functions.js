@@ -92,4 +92,18 @@ function prima (x){
 prima (num); //in questo caso passo un variabile come valore del parametro della funzione
 console.log(num);//scelgo di mostare il valore della variabile che ho passato come valore del parametro della funzione
 
+//ex callback 
+function test(x){
+    return x * x;
+}
+console.log (test(10));//con questo indichiamo di mostrare il risultato della funzione test
+console.log(test);// con questa diciamo di indicare solo il codice della funzione test
 
+function principale (x, callback)//inserito callback function come parametro 
+{
+    console.log ('valore di x:', x);
+    console.log (callback(50));//invocato callback e lo do come argomento 50 
+
+}
+
+principale (5, test);//test calcola il numero li abbiamo assegnato come argomento (50) * se stesso, difatti darà 2500
