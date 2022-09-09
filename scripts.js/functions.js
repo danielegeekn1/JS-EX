@@ -43,3 +43,10 @@ const calcArea = function (radius){
 const area = calcArea(5);
 console.log(area);
 
+//arrow functions
+// in this case we do not need to add the function's name and we can add the arrow to add the function
+const calcVol = (radius)  => {
+    return 3.14* radius**2;
+};
+const vol = calcVol (5);
+console.log ('area is:', area);// in this case we assigned vol to the function and said that the browser should log the result of the function afther the string area is
