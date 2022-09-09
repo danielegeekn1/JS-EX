@@ -42,3 +42,5 @@ console.log(Boolean(null));
 console.log(Boolean(undefined));
 console.log(Boolean(NaN));
 
+//conversione in un valore Booleano di una stringa vuota, darà sempre false
+console.log(Boolean(''));
