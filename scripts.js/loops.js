@@ -22,6 +22,11 @@ for (let counter = 0; counter < 10; counter++)//parametri da poter inserire nel 
 }
 //ciclo for con parola chiave break
 for (let counter = 0; counter < 10; counter++){
-    if (counter === 5)break //questa parola chiave interromperà qua il ciclo,quando raggiunge il valore di 5
+    if (counter === 5)break; //questa parola chiave interromperà qua il ciclo,quando raggiunge il valore di 5
     console.log ('Valore di counter (break)', counter);
 }
+
+//ciclo for con parola chiave continue
+for (let counter = 0; counter < 10; counter++){
+    if (counter === 5) continue; //in questo caso con questa parola chiave si interromperà ciclo qua, sul 5, poi continuerà dal 6
+    console.log('valore di counter (continue)', counter);}
