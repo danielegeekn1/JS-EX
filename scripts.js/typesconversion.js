@@ -20,3 +20,12 @@ console.log (typeof NumStrValue1);
 //se volessimo convertire in numerico il valore di una stringa sola non nmerica, ci ritornerebbe NaN, ovvero valore non numerico
 const NanValue = Number ('questa non è una stringa');
 console.log (NanValue);
+
+//questo sistema serve in quanto previene JS da compiere operazioni non valide, semplicemente esse le reinderizzerà come NaN
+
+//convertire una stringa in numerica ponendo tre spazi prima e tre dopo 
+console.log(Number('   42   '));
+//questa operazione di JS viene chiamata trimmare, si dice che JS in questo caso trimma gli spazi vuoti e prende come valore solo il numero
+
+//ps se uniamo caratteri letterari e numerici JS riporterà NaN
+console.log (Number('42o'));
