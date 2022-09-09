@@ -15,3 +15,8 @@ console.log (typeof strValue);
 const StrValue1 ='33';
 const NumStrValue1 = Number (StrValue1);
 console.log (typeof NumStrValue1);
+
+
+//se volessimo convertire in numerico il valore di una stringa sola non nmerica, ci ritornerebbe NaN, ovvero valore non numerico
+const NanValue = Number ('questa non è una stringa');
+console.log (NanValue);
