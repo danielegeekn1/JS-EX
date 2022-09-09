@@ -57,3 +57,15 @@ const calcSalary = salary  => {
 };
 const Salary = calcSalary(600);
 console.log ('Your salay is:', Salary);
+
+// if we have only one single line in the function we can remove the {} and also the return string
+const calcMoney = money => 100 * money;
+const Money = calcMoney(5);
+console.log ('You earned', Money);
+
+//method to invoke a function 
+const Name ='Daniele';
+let resultName = Name.toUpperCase();
+console.log(resultName);// also in this case we associated a function to a variable, and then invoked it with toUpperCase method
+
+
