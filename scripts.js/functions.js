@@ -83,5 +83,13 @@ myFunction (function(value){
     console.log(value);
 } );*/
 
+//parametri delle funzioni, essenziali per capire i callback
+let num = 10;
+function prima (x){
+    x = x - 5; // assegno al valore x segnato come parametro un valore
+    console.log(x);//scelgo di mostrare il valore che ho assegnato ad x
+}
+prima (num); //in questo caso passo un variabile come valore del parametro della funzione
+console.log(num);//scelgo di mostare il valore della variabile che ho passato come valore del parametro della funzione
 
 
