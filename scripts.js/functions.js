@@ -78,4 +78,10 @@ myFunction (function(value){
     console.log (value);
 });// in this case we inserted a function in the parameter of another function, and invoked it with another function
 
+//stessa funzione di sopra riportata con un arrow function
+/*myFunction (value=>{
+    console.log(value);
+} );*/
+
+
 
