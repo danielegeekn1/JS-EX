@@ -33,3 +33,13 @@ console.log('Hello there ${name} ${time}');
 
 talk2 ('my', 'love');
 //in this case we chosen to use 2 parameters for the same functions, that we invoked by using both of 2 arguments avaiable
+
+//storing a variable, stored in local scope, in global scope as well in order to render the result as required
+
+const calcArea = function (radius){
+    let area = 3.14 * radius**2;
+    return area;
+}
+const area = calcArea(5);
+console.log(area);
+
