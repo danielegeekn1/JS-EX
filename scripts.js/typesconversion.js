@@ -29,3 +29,10 @@ console.log(Number('   42   '));
 
 //ps se uniamo caratteri letterari e numerici JS riporterà NaN
 console.log (Number('42o'));
+
+//conversioni di tipo booleano da imparare cosi come sono
+console.log(Number(true)); //questo reinderizzerà 1
+console.log(Number(false));//questo reinderizzerà 0
+
+console.log(Boolean(1));//questo reinderizzerà true
+console.log(Boolean(0));//questo reinderizzerà false
