@@ -115,3 +115,6 @@ let logCall = function (){
     console.log('logCall was called back');
 };
 setTimeout (logCall, 3000);//invoked a callback as parameter, after 3000 millisecond of time
+
+//other way to set the Timeout, not the most standard way, by puttin as parameter function instead of logCall
+
