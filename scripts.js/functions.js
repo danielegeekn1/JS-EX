@@ -68,4 +68,14 @@ const Name ='Daniele';
 let resultName = Name.toUpperCase();
 console.log(resultName);// also in this case we associated a function to a variable, and then invoked it with toUpperCase method
 
+//callback functions
+const myFunction = (callbackFunction)=>{
+    let value = 50;
+    callbackFunction(value);
+};
+
+myFunction (function(value){
+    console.log (value);
+});// in this case we inserted a function in the parameter of another function, and invoked it with another function
+
 
