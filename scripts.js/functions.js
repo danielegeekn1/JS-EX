@@ -28,8 +28,8 @@ talk ('Mario');//mario in this case, is what we call the argument of the functio
 //why ${name} is shown in terminal excatly like this and so it's not working??
 
 const talk2 = function (name, time){
-console.log('Good ${time} ${name}');
+console.log('Hello there ${name} ${time}');
 };
 
-talk2 ('there', 'Daniele');
+talk2 ('my', 'love');
 //in this case we chosen to use 2 parameters for the same functions, that we invoked by using both of 2 arguments avaiable
