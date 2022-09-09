@@ -107,3 +107,11 @@ function principale (x, callback)//inserito callback function come parametro
 }
 
 principale (5, test);//test calcola il numero li abbiamo assegnato come argomento (50) * se stesso, difatti darà 2500
+//il numero 50 li è stato assegnato in quanto è stato associato alla funzione callback in quella principale
+
+
+//easy ex of callback function to set a time out ( that is why callbacks are most used)
+let logCall = function (){
+    console.log('logCall was called back');
+};
+setTimeout (logCall, 3000);//invoked a callback as parameter, after 3000 millisecond of time
