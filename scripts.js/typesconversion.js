@@ -36,3 +36,9 @@ console.log(Number(false));//questo reinderizzerà 0
 
 console.log(Boolean(1));//questo reinderizzerà true
 console.log(Boolean(0));//questo reinderizzerà false
+
+//in caso di conversione Booleana, sia null, che undefined, che NaN torneranno un valore di tipo false
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+
