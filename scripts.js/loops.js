@@ -20,3 +20,8 @@ for (let counter = 0; counter < 10; counter++)//parametri da poter inserire nel 
 {
     console.log('valore di counter(while)', counter);
 }
+//ciclo for con parola chiave break
+for (let counter = 0; counter < 10; counter++){
+    if (counter === 5)break //questa parola chiave interromperà qua il ciclo,quando raggiunge il valore di 5
+    console.log ('Valore di counter (break)', counter);
+}
