@@ -9,3 +9,9 @@ console.log (typeof BoolValue);
 //questa variabile ha come valore una stringa ( fra gli apici è considerata tale, per quanto numero interno è numero)
 const strValue = '42';
 console.log (typeof strValue);
+
+//altro tipo di conversione da valore in stringa a valore numerico
+//assegnandoli in questo caso una variabile ad una costante
+const StrValue1 ='33';
+const NumStrValue1 = Number (StrValue1);
+console.log (typeof NumStrValue1);
