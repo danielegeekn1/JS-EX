@@ -118,3 +118,9 @@ setTimeout (logCall, 3000);//invoked a callback as parameter, after 3000 millise
 
 //other way to set the Timeout, not the most standard way, by puttin as parameter function instead of logCall
 
+//add a callback to add addEventListener
+let btn = document.querySelector ("#item1");
+btn.addEventListener ("click", function(e) //in this case, this function is valid whenever someone clicks on the button
+{
+    console.log("The button was clicked");
+});
