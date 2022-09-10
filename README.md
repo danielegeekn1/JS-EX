@@ -8,3 +8,6 @@ Per ogni ruolo il salario percepito è il seguente:
 - cto => 1800€
 - developer => 1500€
 - default => 1000€
+
+
+
