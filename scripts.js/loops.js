@@ -30,3 +30,12 @@ for (let counter = 0; counter < 10; counter++){
 for (let counter = 0; counter < 10; counter++){
     if (counter === 5) continue; //in questo caso con questa parola chiave si interromperà ciclo qua, sul 5, poi continuerà dal 6
     console.log('valore di counter (continue)', counter);}
+
+
+    //for loops with index to show more element of an array
+var fruits = ["mango", "banana", "peach"];
+for (var i = 0; i < 3; i++ ){
+    console.log(fruits[i]);// [i] is the index, that indicates the number of the elements in the array, since we put less than 3, it'll count til that number
+
+}
+//this loops will show all elements of the array var fruits
