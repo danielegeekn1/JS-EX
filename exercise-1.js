@@ -6,7 +6,7 @@
 const sum = (a, b) => {
 return a + b;
 };
-sum (10, 2);
+console.log (sum (10, 2));
 /*const log = function (value) {
   console.log(value);
 }
