@@ -39,3 +39,9 @@ for (var i = 0; i < 3; i++ ){
 
 }
 //this loops will show all elements of the array var fruits
+
+//this operation has as a limit 3, but what if we want to loop to have no limit?we could do it like this
+var vegetables = ["peppers", "aubergine", "eggplant", "tomato", "carrots", "spinach"];
+for (var i = 0; i < vegetables.length; i++){
+    console.log (vegetables[i]);
+}
