@@ -15,6 +15,11 @@ do {
 while (counter === 0);
 //con questa operazione diciamo che la variabile counter è uguale a 0, e finche rimane tale fai console log di quello riportato
 
+
+
+
+
+
 //ciclo for
 for (let counter = 0; counter < 10; counter++)//parametri da poter inserire nel ciclo for
 {
@@ -57,3 +62,11 @@ for (var elem in data) {
     console.log(elem, data[elem]);//elem will show all element inside the var data, and data all the value of that element
 }
 //that'll print out the whole content of var data
+
+//loop through an array with while loops
+var randomStuff = ["apple", "peach", "pc", "towel", 3.23, 18.5, true, false, undefined, ["cat", "dog"], 3.10, "lastobject"];
+var x = 0;
+while (x < randomStuff.lenght){
+    console.log(randomStuff[x]);
+    x++;
+}
