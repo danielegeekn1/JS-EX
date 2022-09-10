@@ -124,3 +124,4 @@ btn.addEventListener ("click", function(e) //in this case, this function is vali
 {
     console.log("The button was clicked");
 });
+
