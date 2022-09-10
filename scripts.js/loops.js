@@ -42,6 +42,18 @@ for (var i = 0; i < 3; i++ ){
 
 //this operation has as a limit 3, but what if we want to loop to have no limit?we could do it like this
 var vegetables = ["peppers", "aubergine", "eggplant", "tomato", "carrots", "spinach"];
-for (var i = 0; i < vegetables.length; i++){
+for (var i = 0; i < vegetables.length; i++)//lenght will show all elements of the array, until you put one, it'll render that element
+{
     console.log (vegetables[i]);
 }
+
+//loop through object, that doesn't have index
+var data = {
+    name:"John",
+    age: 28,
+    maritalStatus:true
+}
+for (var elem in data) {
+    console.log(elem, data[elem]);//elem will show all element inside the var data, and data all the value of that element
+}
+//that'll print out the whole content of var data
