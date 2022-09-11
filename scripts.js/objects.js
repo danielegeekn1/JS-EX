@@ -49,5 +49,20 @@ const person = {
     }
 }
 superHeroes['name']['first'];//questo mostra sempre la prima proprietà dell'oggetto name, nidificato nell'oggetto superHeroes
+//esempio di oggetto costruttore, che può contenere più oggetti o funzioni in essa
+const person1 = {
+    name: 'Chris',
+    introduceSelf() {
+      console.log(`Hi! I'm ${this.name}.`);
+    }
+  }
+  
+  const person2 = {
+    name: 'Deepti',
+    introduceSelf() {
+      console.log(`Hi! I'm ${this.name}.`);
+    }
+  }
 
+console.log(Object.entries(person1));
 
