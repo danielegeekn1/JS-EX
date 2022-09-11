@@ -65,4 +65,5 @@ const person1 = {
   }
 
 console.log(Object.entries(person1));
-
+person1.introduceSelf();
+person2.introduceSelf();
