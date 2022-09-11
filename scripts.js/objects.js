@@ -80,13 +80,33 @@ function createPerson(name) {
   //questa crea due proprietà:nanme e un metodo introduceSelff
 //creare altri oggetti da essa
 
-const salva = createPerson('Salva');
-salva.name;
-salva.introduceSelff();
+const jonny = createPerson('Salva');
+jonny.name;
+jonny.introduceSelff();
 
-const frankie = createPerson('Frankie');
-frankie.name;
-frankie.introduceSelff();
+const floki = createPerson('Frankie');
+floki.name;
+floki.introduceSelff();
 
+//altro esempio di costruttore
+//il nome di un'oggetto costruttore è buona pratica che inizi sempre con la prima lettera maiuscola
+function People(name) {
+    this.name = name;
+    this.introduceSelf = function() {
+      console.log(`Hi! I'm ${this.name}.`);
+    }
+  }
+  //all'interno di esso usiamo this.
+  //sintassi per associare proprietà e valori è differente come possiamo notare
+
+  //per richiamare l'oggetto costruttore People faremo cosi
+  const salva = new People('Salva');
+  salva.name;
+  salva.introduceSelf();
+  
+  const frankie = new People('Frankie');
+  frankie.name;
+  frankie.introduceSelf();
+  
 
   
