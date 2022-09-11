@@ -27,4 +27,14 @@ const person = {
 
   console.log(person.bio());// questo può reinderizzare il risultato della funzione
 
+  //altro esempio con oggetti in JS
+  const bigname ={
+
+            name:{
+                first:'Daniele',
+                second:'Giulia',
+            }
+  }
+  console.log(bigname.name.first);
+  console.log(bigname.name.second);
   
