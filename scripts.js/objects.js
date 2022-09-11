@@ -67,3 +67,26 @@ const person1 = {
 console.log(Object.entries(person1));
 person1.introduceSelf();
 person2.introduceSelf();
+
+//inserire un'oggetto all'interno di una funzione per creare più e più valori
+function createPerson(name) {
+    const obj = {};
+    obj.name = name;
+    obj.introduceSelff = function() {
+      console.log(`Hi! I'm ${this.name}.`);
+    }
+    return obj;
+  }
+  //questa crea due proprietà:nanme e un metodo introduceSelff
+//creare altri oggetti da essa
+
+const salva = createPerson('Salva');
+salva.name;
+salva.introduceSelff();
+
+const frankie = createPerson('Frankie');
+frankie.name;
+frankie.introduceSelff();
+
+
+  
