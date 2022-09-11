@@ -1,3 +1,4 @@
+//richiamare proprietà e valori tramite la parola chiave Object, in modo celere
 let hero={
     name:'Batman',
     weapon:'Batarang',
@@ -6,3 +7,7 @@ let hero={
         model:'Batmobile',
     },
 };
+
+console.log(Object.values(hero));
+console.log(Object.keys(hero));
+console.log(Object.entries(hero));
