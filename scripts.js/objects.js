@@ -37,4 +37,17 @@ const person = {
   }
   console.log(bigname.name.first);
   console.log(bigname.name.second);
-  
+
+
+  //un'altro modo di richiamare proprietà e valori di un'oggetto è con le parentesi quadre, in questo modo
+
+
+   let superHeroes = {
+    name:{
+        first:'Batman',
+        second:'Superman '
+    }
+}
+superHeroes['name']['first'];//questo mostra sempre la prima proprietà dell'oggetto name, nidificato nell'oggetto superHeroes
+
+
