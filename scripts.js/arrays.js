@@ -104,4 +104,6 @@ let PersonNames =['Daniele', 'Franco', 'Giovanni']
 	let splitMyBF = MyBF.split(" ");
     console.log (splitMyBF);
 
+    console.log(splitMyBF.join(" "));
+
 
