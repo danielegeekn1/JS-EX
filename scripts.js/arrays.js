@@ -55,6 +55,12 @@ console.log(BestManga);
 
 //aggiungere semplicemente un'elemento con 'splice'
 let BestAnimeEver = ['NarutoShippunden', 'Dragon Ball-1st season', 'Shaman king'];
-		let ani = BestAnimeEver.splice(3,0, 'Soul eater'); 
+		BestAnimeEver.splice(3,0, 'Soul eater'); 
 
 		console.log ( BestAnimeEver);//reinderizzerà tutti gli elementi 								e poi ‘Soul eater’
+
+// metodo per spostare elementi da un'array a un'altro con 'slice'
+let BestFantasyMovies = ['Lord of the rings', 'Hobbit', 'Never-ending story', 'The Chronicles of Narnia'];
+let BfM = BestFantasyMovies.slice(2, 4);
+	
+	console.log (BfM);
