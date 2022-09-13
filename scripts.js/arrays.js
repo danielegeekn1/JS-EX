@@ -104,6 +104,12 @@ let PersonNames =['Daniele', 'Franco', 'Giovanni']
 	let splitMyBF = MyBF.split(" ");
     console.log (splitMyBF);
 
+    //riportare l'array creato con metodo 'split' in una stringa con 'join'
     console.log(splitMyBF.join(" "));
+    
+    //metodo 'reduce' per ridurre elementi e fare calcoli fra elementi di un'array
+    let arr = [1, 2, 3, 4, 5];
+	let ArrayRed = arr.reduce((sum, current)  => sum + current, 0);
+	console.log(ArrayRed);
 
 
