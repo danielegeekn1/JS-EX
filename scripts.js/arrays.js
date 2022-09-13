@@ -16,3 +16,11 @@ let lastHeroes = Heroes.pop();
 heroes.push('Green Arrow');//in questo caso per esempio stiamo aggiungendo ad heroes l'elemento 'Green Arrow'
 
 
+//metodo per rimuovere un'elemento in testa ad una lista con la parola chiave 'shift'
+let DragonBallEnemy = ['Majin bu', 'Freezer', 'Cell'];
+let otherEnemy = DragonBallEnemy.shift();
+
+console.log(otherEnemy);
+
+//e' possibile poi rispostare l'elemento rimosso dalla testa di una lista in un'altro array, tramite l'utilizzo di unshift
+otherEnemy.unshift('Majin bu');
