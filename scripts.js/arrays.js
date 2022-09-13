@@ -90,3 +90,12 @@ let PersonNames =['Daniele', 'Franco', 'Giovanni']
 
 	let newItems = PersonNames.filter (item => item == 'Franco' || item == 'Daniele'); 
 		console.log (newItems); 
+
+    //aggiungere un valore ad ogni singolo elemento di un'array con 'map'
+    let MangaCharacters = ['Rufy', 'Kenshin', 'Gatsu', 'Naruto','Sasuke'];
+	let MangaCharactersMap = MangaCharacters.map((item) =>{
+		item += 'chan';
+		return item;});
+
+	console.log (MangaCharactersMap);
+    
