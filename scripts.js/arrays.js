@@ -85,3 +85,8 @@ let BestRecipies = ['Carbonara', 'Pizza', 'Vitel Tunè','Amatriciana'];
     let navItems=['home', 'about', 'story', 'contacts'];
 	let items = navItems.find (items => items =='home');
 	console.log (items);
+//come reinderizzare più specifici elementi di un'array grazie a 'filter'
+let PersonNames =['Daniele', 'Franco', 'Giovanni']
+
+	let newItems = PersonNames.filter (item => item == 'Franco' || item == 'Daniele'); 
+		console.log (newItems); 
