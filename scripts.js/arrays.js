@@ -64,3 +64,14 @@ let BestFantasyMovies = ['Lord of the rings', 'Hobbit', 'Never-ending story', 'T
 let BfM = BestFantasyMovies.slice(2, 4);
 	
 	console.log (BfM);
+
+    //concatenare elementi ad un'array con 'concat'
+    let BestCities = ['Ala', 'Moscheri', 'Villa lagarina'];
+	let BestCitiesEver = BestCities.concat('Mezzolombardo', 'Braies');
+
+    console.log (BestCities);//trasmetterà Ala, Moscheri e Villa Lagarina
+    console.log (BestCitiesEver);//oltre alle città sopra riportate trasmetterà Mezzolombardo e Braies
+
+//metoo per controllare la posizione di un'elemento in un'array con indexOf
+let worstCities = ['California', 'Los Angeles', 'Lagos'];
+console.log(worstCities.indexOf('Los Angeles'));
