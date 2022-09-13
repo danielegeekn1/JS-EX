@@ -23,4 +23,36 @@ let otherEnemy = DragonBallEnemy.shift();
 console.log(otherEnemy);
 
 //e' possibile poi rispostare l'elemento rimosso dalla testa di una lista in un'altro array, tramite l'utilizzo di unshift
-otherEnemy.unshift('Majin bu');
+DragonBallEnemy.unshift('Majin bu');
+
+//per verificare la quantità di elementi presenti in un'array è possibile farlo tramite l'utilizzo della proprietà 'lenght'
+console.log(DragonBallEnemy.length);
+
+//per svuotare invece un'array completamente possiamo fare in questo modo 
+
+DragonBallEnemy.lenght = 0;
+console.log (DragonBallEnemy);
+
+//per richiamare un preciso elemento di un'array, si può fare indicando il numero dentro le parentesi quadre
+//importante considerare che si inizia a contare il numero degli elementi partendo dallo 0
+DragonBallEnemy[1];
+
+// possiamo usare questo sistema per iterare singoli elementi di un'array con un loop
+let RufyEnemy = ['Don Flamingo', 'Trafalgar Law', 'Eneru'];
+function Anime (){
+    for (i=0; i < RufyEnemy.length; i++){
+        console.log(RufyEnemy[1]);
+    }
+}
+console.log(Anime());
+
+//possiamo anche usare questo sistema per il ciclo for of, per veder ogni valore di un'array
+for (let hero of RufyEnemy.length){
+    console.log(hero);
+}
+
+//rimuovere un'elemento con 'splice'
+let BestManga =['One piece', 'Berserk', 'Vagabond'];	
+BestManga.splice(1,1 );
+console.log(BestManga);
+
