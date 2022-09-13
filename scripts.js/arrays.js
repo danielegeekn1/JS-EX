@@ -75,3 +75,7 @@ let BfM = BestFantasyMovies.slice(2, 4);
 //metoo per controllare la posizione di un'elemento in un'array con indexOf
 let worstCities = ['California', 'Los Angeles', 'Lagos'];
 console.log(worstCities.indexOf('Los Angeles'));
+
+//metodo per controllare la posizione di un'elemento in un'array partendo dalla coda con lastIndexOf
+let BestRecipies = ['Carbonara', 'Pizza', 'Vitel Tunè','Amatriciana'];
+	console.log(BestRecipies.lastIndexOf('Pizza'));
