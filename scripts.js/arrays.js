@@ -46,13 +46,15 @@ function Anime (){
 }
 console.log(Anime());
 
-//possiamo anche usare questo sistema per il ciclo for of, per veder ogni valore di un'array
-for (let hero of RufyEnemy.length){
-    console.log(hero);
-}
+
 
 //rimuovere un'elemento con 'splice'
 let BestManga =['One piece', 'Berserk', 'Vagabond'];	
 BestManga.splice(1,1 );
 console.log(BestManga);
 
+//aggiungere semplicemente un'elemento con 'splice'
+let BestAnimeEver = ['NarutoShippunden', 'Dragon Ball-1st season', 'Shaman king'];
+		let ani = BestAnimeEver.splice(3,0, 'Soul eater'); 
+
+		console.log ( BestAnimeEver);//reinderizzerà tutti gli elementi 								e poi ‘Soul eater’
