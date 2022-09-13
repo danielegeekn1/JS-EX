@@ -98,4 +98,10 @@ let PersonNames =['Daniele', 'Franco', 'Giovanni']
 		return item;});
 
 	console.log (MangaCharactersMap);
-    
+
+    //metodo per mutare una singola stringa in un'array con 'split'
+    let MyBF = 'Muslim, Federica, Radim';
+	let splitMyBF = MyBF.split(" ");
+    console.log (splitMyBF);
+
+
