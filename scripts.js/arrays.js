@@ -79,3 +79,9 @@ console.log(worstCities.indexOf('Los Angeles'));
 //metodo per controllare la posizione di un'elemento in un'array partendo dalla coda con lastIndexOf
 let BestRecipies = ['Carbonara', 'Pizza', 'Vitel Tunè','Amatriciana'];
 	console.log(BestRecipies.lastIndexOf('Pizza'));
+
+    
+    //metodo trovare elemento con find
+    let navItems=['home', 'about', 'story', 'contacts'];
+	let items = navItems.find (items => items =='home');
+	console.log (items);
