@@ -1,10 +1,16 @@
 function greet(greeting) {
   // ...
+  return function sayHi(name){
+    console.log(`${greeting} ${name}`);}
+    
+  
+        
 }
 
 const greetWithHello = greet('Hello');
 const greetWithBye = greet('Bye');
 const greetWithHi = greet('Hi');
+
 
 const greetPaulWithHello = greetWithHello('Paul');
 const greetPaulWithHi = greetWithHi('Paul');
