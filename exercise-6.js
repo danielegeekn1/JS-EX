@@ -1,5 +1,7 @@
 function getKeys(obj) {
   // ...
+obj = Object.keys(person);
+return obj;
 }
 
 const person = {
