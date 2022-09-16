@@ -2,7 +2,7 @@
 
 class Person {
 constructor (firstName, lastName){
-    this.name = firstName;
+    this.firstName = firstName;
     this.lastName = lastName;
 }
 }
