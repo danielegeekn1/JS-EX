@@ -1,5 +1,12 @@
 function adultFilter(persons) {
   // ...
+const OverAge =[];
+for (i=0; i<persons.length; i++){
+  if (persons[i].age>=18){
+    OverAge.push(persons[i]);
+  }
+}
+return OverAge;
 }
 
 const persons = [
