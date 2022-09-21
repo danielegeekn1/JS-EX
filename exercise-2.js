@@ -1,6 +1,14 @@
 function pow(base) {
   // ...
-}
+ return  (trueBase) => { 
+let calc = trueBase ** base;
+return calc;
+ }
+    
+ }
+
+
+
 
 const pow2 = pow(2);
 const pow5 = pow(5);
