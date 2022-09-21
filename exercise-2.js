@@ -1,7 +1,7 @@
 function pow(base) {
   // ...
  return  (trueBase) => { 
-let calc = trueBase ** base;
+let calc = Math.pow(trueBase, base);
 return calc;
  }
     
