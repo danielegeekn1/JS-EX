@@ -1,15 +1,18 @@
 const person = {
   id: 1,
-  firstName: 'Mario',
-  lastName: 'Rossi',
-  age: 25
+  firstName: "Mario",
+  lastName: "Rossi",
+  age: 25,
 };
 
 const id = person.id;
-const personInfo = {
+/*const personInfo = {
   firstName: person.firstName,
   lastName: person.lastName,
-  age: person.age
-};
+  age: person.age,
+};*/
 
-console.log(id, personInfo);
+const personInfo = JSON.stringify(person, ["firstName", "lastName", "age"]);
+
+console.log(person.id);
+console.log(personInfo);
