@@ -1,16 +1,25 @@
 //creazione classe
 class BankAccount  {
-     fund = [];
-     deposit (funds){
-        this.fund.push(funds);
-     }
-     withdraw (funds){
-        this.fund.pop(funds);
-     }
-     view (){
-        return this.fund;
-     }
+   
+   constructor (Funds){
+     this.funds = Funds;
+
+   }
+   
+   Account = [];
+    deposit (funds){
+    this.funds = funds;
+    this.Account.push(funds++);
+    return this.deposit;
     }
+    withdraw (funds){
+   
+    }
+    view (funds){
+
+    }
+   
+   }
 
 
 
