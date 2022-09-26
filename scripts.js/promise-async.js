@@ -18,3 +18,47 @@ promise
   .catch((message) => {
     console.log("Forse forse" + " " + message);
   });
+
+//utilizzo promise con un'id come parametro
+function Anime(character) {
+  return new Promise((resolve, reject) => {
+    if (character == "Rufy") {
+      resolve(character + "is the best");
+    } else {
+      reject("There is no peace");
+    }
+  });
+}
+let bestAnime = Anime("Rufy"); // in questo modo passo come argomento della funzione 'Rufy'
+bestAnime
+  .then((name) => {
+    console.log(`I have to admit  ${name}`);
+  })
+  .catch((err) => {
+    console.log(`Help me${err}`); // se pongo un'argomento diverso allora mi dava la frase passata con reject
+  });
+
+//promise per impostare un setTimeout
+
+function timeOut(Name) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (Name === "Gatsu") {
+        resolve(Name);
+      } else {
+        reject("That is sad");
+      }
+    }, 2000);
+  });
+}
+
+let surprise = timeOut("Gatsu");
+surprise.then((Name) => console.log(`${Name} is the best`));
+surprise
+  .then((Name) => console.log(`${Name}, is also an hero`))
+  .catch((err) => {
+    console.log(err);
+  });
+// in questo caso la stringa 'Gatsu is the best è reinderizzata dopo 2 secondi
+//in modo del tutto asincrono
+// e solo dopo di essa verrà rappresentata l'altra frase segnata con il 'then', ovvero 'Gatsu is also an hero'
