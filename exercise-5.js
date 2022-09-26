@@ -34,7 +34,7 @@ const jobs = [
   },
 ];
 
-function fetchPersonById(id) {
+const Persons = function fetchPersonById(id) {
   return new Promise((resolve) =>
     setTimeout(() => {
       id = id;
@@ -47,9 +47,9 @@ function fetchPersonById(id) {
       }
     }, 1000)
   );
-}
+};
 
-function fetchJobById(id) {
+const Jobs = function fetchJobById(id) {
   return new Promise((resolve) =>
     setTimeout(() => {
       id = id;
@@ -62,6 +62,10 @@ function fetchJobById(id) {
       }
     }, 500)
   );
-}
+};
 
+Promise.all([
+  realJob((resolve) => setTimeout(() => resolve(1), 500)),
+  realId((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+]).then((values) => console.log(values));
 // core here
