@@ -62,3 +62,25 @@ surprise
 // in questo caso la stringa 'Gatsu is the best è reinderizzata dopo 2 secondi
 //in modo del tutto asincrono
 // e solo dopo di essa verrà rappresentata l'altra frase segnata con il 'then', ovvero 'Gatsu is also an hero'
+
+//async functions  in js with 'await'
+function resolveAfter2Seconds() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("resolved");
+    }, 1000);
+  });
+}
+
+async function asyncCall() {
+  console.log("calling");
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  //in questo caso stiamo indicando di aspettare 2 secondi prima di far partire la nostra funzione con la promise
+  //la quale ha un timeout di 1 secondo, quindi solo dopo bisogna mostrarla
+  // expected output: "resolved"
+}
+
+asyncCall();
+
+//esempio async function
