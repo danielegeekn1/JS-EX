@@ -22,12 +22,12 @@ const persons = [
 function fetchPersonById(id) {
   // code here
   return new Promise((resolve) => {
-    id = persons.id;
-    if (persons.id === 1) {
+    id = id;
+    if (id === 1) {
       resolve(persons[0]);
-    } else if (persons.id === 2) {
+    } else if (id === 2) {
       resolve(persons[1]);
-    } else if (persons.id === 3) {
+    } else if (id === 3) {
       resolve(persons[2]);
     }
   });
@@ -41,4 +41,7 @@ async function alias() {
   let thirdId = fetchPersonById(3);
   console.log(thirdId);
 }
+
+console.log(alias());
+
 // code here
