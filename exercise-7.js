@@ -38,7 +38,7 @@ function fetchPersonById(id) {
   const person = await JSON.parse(personJson);
   console.log(person);
 })();*/
-async function Final() {
+async function FinalCut() {
   try {
     const personJson = await fetchPersonById(4);
     const person = await JSON.parse(personJson);
@@ -47,4 +47,4 @@ async function Final() {
     console.log("This is an error");
   }
 }
-console.log(Final());
+console.log(FinalCut());
