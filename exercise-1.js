@@ -2,13 +2,8 @@ let personName = "Paul";
 
 function canPlay() {
   if (true) {
-    let personName = 'Paul';
+    return (personName += " plays football"); // Argh! personName is not defined
   }
-
-
-  personName += ' plays football'; // Argh! personName is not defined
-
-  console.log(personName);
 }
 
-canPlay();
+console.log(canPlay());
