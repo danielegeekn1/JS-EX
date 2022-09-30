@@ -3,11 +3,14 @@ class Person {
     this.firstName = firstName;
     this.lastName = lastName;
   }
+  static extractMethod(obj) {
+    return obj;
+  }
 }
 
 const obj = {
-  firstName: 'Mario',
-  lastName: 'Rossi'
+  firstName: "Mario",
+  lastName: "Rossi",
 };
 
 const person = Person.fromObject(obj);
