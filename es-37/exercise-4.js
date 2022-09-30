@@ -1,27 +1,20 @@
 //creazione classe
-class BankAccount  {
-   
-   constructor (Funds){
-     this.funds = Funds;
+class BankAccount {
+  #amount = 0;
+  constructor(initialAmount) {
+    this.#amount = initialAmount;
+  }
 
-   }
-   
-   Account = [];
-    deposit (funds){
-    this.funds = funds;
-    this.Account.push(funds++);
-    return this.deposit;
-    }
-    withdraw (funds){
-   
-    }
-    view (funds){
-
-    }
-   
-   }
-
-
+  deposit(amount) {
+    this.#amount += amount;
+  }
+  withdraw(amount) {
+    this.#amount -= amount;
+  }
+  view() {
+    console.log(this.#amount);
+  }
+}
 
 const bankAccount = new BankAccount(1000);
 bankAccount.deposit(500);
