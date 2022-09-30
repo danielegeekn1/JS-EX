@@ -32,16 +32,20 @@ function fetchPersonById(id) {
     }
   });
 }
-
-async function alias() {
-  let firstId = await fetchPersonById(1);
-  console.log(firstId);
-  let secondId = await fetchPersonById(2);
-  console.log(secondId);
-  let thirdId = fetchPersonById(3);
-  console.log(thirdId);
-}
-
-console.log(alias());
+/*
+fetchPersonById(1).then((mex) => {
+  console.log(mex);
+});
+fetchPersonById(2).then((mex2) => {
+  console.log(mex2);
+});
+fetchPersonById(3)
+  .then((mex3) => {
+    console.log(mex3);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+*/
 
 // code here
