@@ -48,7 +48,7 @@ function fetchPersonById(id) {
     }
   });
 }
-
+/*
 async function JoinPersons() {
   let Person1 = await fetchPersonById(1);
   console.log(Person1);
@@ -56,8 +56,8 @@ async function JoinPersons() {
   console.log(Person2);
   let Person3 = await fetchPersonById(3);
   console.log(Person3);
-}
-console.log(JoinPersons());
+}*/
+//console.log(JoinPersons());
 
 function fetchJobById(id) {
   return new Promise((resolve) => {
@@ -71,6 +71,19 @@ function fetchJobById(id) {
     }
   });
 }
+let jobOne = new fetchJobById(1);
+let jobTwo = new fetchJobById(2);
+let jobThree = new fetchJobById(3);
+
+let personOne = new fetchPersonById(1);
+let personTwo = new fetchPersonById(2);
+let personThree = new fetchPersonById(3);
+
+Promise.all([personOne, jobOne, personTwo, jobTwo, personThree, jobThree]).then(
+  (mex) => console.log(mex)
+);
+/*
+
 async function JoinJobs() {
   let Job1 = await fetchJobById(1);
   console.log(Job1);
@@ -78,6 +91,6 @@ async function JoinJobs() {
   console.log(Job2);
   let Job3 = await fetchJobById(3);
   console.log(Job3);
-}
+}*/
 
-console.log(JoinJobs());
+//console.log(JoinJobs());
