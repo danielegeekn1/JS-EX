@@ -27,17 +27,14 @@ const persons = [
 function fetchPersonById(id) {
   return new Promise((resolve, reject) => {
     persons.find((item) => item.id === id);
-    if (id === 1) {
-      resolve(persons[0]);
-    } else if (id === 2) {
-      resolve(persons[1]);
-    } else if (id === 3) {
-      resolve(persons[2]);
+    if (id <= 3) {
+      resolve(persons);
     } else {
       reject("Promise rejected");
     }
   });
 }
+
 fetchPersonById(1).then((person) => console.log(person));
 fetchPersonById(2).then((person) => console.log(person));
 fetchPersonById(3).then((person) => console.log(person));
