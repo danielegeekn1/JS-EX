@@ -20,36 +20,40 @@
 </html>
 
 <script>
-  //codice per recuperare il testo del label
-  /*let myLabel = document.querySelector("form");
-  let labelCont = myLabel.firstElementChild;
-  let shownText = labelCont.firstElementChild.innerText;
-
-  let values = labelCont.lastElementChild;
-  console.log(myLabel);
-  console.log(labelCont);
-  console.log(shownText);
-  console.log(values);*/
   // code here
+
+  //codice per stampare il primo elemento testo del label, e l'attributo impostatoli nell'input
+
   let myLabel = document.querySelector("form");
   let labelCont = myLabel.firstElementChild;
   let shownText = labelCont.firstElementChild.innerText;
   let values = labelCont.lastElementChild;
   let Name = values.getAttribute("value");
 
+  //codice per stampare il secondo elemento testo del label, e l'attributo impostatoli nell'input
+
+  let myLabelN = document.querySelector("form");
+  let label2 = myLabelN.firstElementChild;
+  let pos2 = label2.nextElementSibling;
+  let TextPos2 = pos2.firstElementChild;
+  let Text2 = TextPos2.innerText;
+  let Attr2 = pos2.lastElementChild;
+  let AttrValue2 = Attr2.getAttribute("value");
+
+  //codice per stampare il terzo elemento testo del label, e l'attributo impostatoli nell'input
+
   let myLabel2 = myLabel.lastElementChild;
   let labelCont2 = myLabel2.firstElementChild.innerText;
   let values2 = myLabel2.lastElementChild;
   let Name2 = values2.getAttribute("value");
 
-  console.log(myLabel);
-  console.log(labelCont);
-  console.log(shownText);
-  console.log(values);
-  console.log(Name);
+  console.log(ArrayN);
+  console.log(ArrayLastName);
 
-  console.log(myLabel2);
+  console.log(Text2);
+  console.log(AttrValue2);
+  console.log(shownText);
+  console.log(Name);
   console.log(labelCont2);
-  console.log(values2);
   console.log(Name2);
 </script>
