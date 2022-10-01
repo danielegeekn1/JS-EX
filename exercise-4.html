@@ -4,15 +4,15 @@
       <form>
         <div>
           <label>First Name:</label>
-          <input type="text" class="form-input" id="firstName" value="Mario"/>
+          <input type="text" class="form-input" id="firstName" value="Mario" />
         </div>
         <div>
           <label>Last Name:</label>
-          <input type="text" class="form-input" id="lastName" value="Rossi"/>
+          <input type="text" class="form-input" id="lastName" value="Rossi" />
         </div>
         <div>
           <label>Age:</label>
-          <input type="number" class="form-input" id="age" value="25"/>
+          <input type="number" class="form-input" id="age" value="25" />
         </div>
       </form>
     </div>
@@ -20,5 +20,40 @@
 </html>
 
 <script>
+  let inputs = document.querySelectorAll("input");
+  for (let i = 0; i < inputs.length; i++) {
+    console.log(inputs[i]);
+  }
+  let attr = inputs[0];
+  let attrType1 = attr.getAttribute("type");
+  let attrId1 = attr.getAttribute("id");
+  let attrValue1 = attr.getAttribute("value");
+
+  let attr2 = inputs[1];
+  let attrType2 = attr2.getAttribute("type");
+  let attrId2 = attr2.getAttribute("id");
+  let attrValue2 = attr2.getAttribute("value");
+
+  let attr3 = inputs[2];
+  let attrType3 = attr3.getAttribute("type");
+  let attrId3 = attr3.getAttribute("id");
+  let attrValue3 = attr3.getAttribute("value");
+
+  console.log(inputs);
+  console.log(attr);
+  console.log(attrType1, attrId1, attrValue1);
+
+  console.log(attrType2, attrId2, attrValue2);
+  console.log(attrType3, attrId3, attrValue3);
+
+  /*
+  let input1 = document.querySelector("input");
+  let attrId = input1.getAttribute("id");
+  let attrType = input1.getAttribute("type");
+  let value = input1.getAttribute("value");
+
+  console.log(input1);
+  console.log(attrType, attrId, value);*/
+
   // code here
 </script>
