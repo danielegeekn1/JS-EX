@@ -20,5 +20,16 @@
 </html>
 
 <script>
+  //codice per veder l'intero div contenente il testo 'First Name' recuperando l'elemento dalla classe
+  /*let myClass = document.querySelector(".form-input");
+  let myText = myClass.parentNode;
+  console.log(myText);*/
+
+  //codice per veder solo il contenuto di testo 'First Name' recuperando l'elemento dalla classe
+  let myOtherClass = document.querySelector(".form-input");
+  let ClassText = myOtherClass.parentNode;
+  let shownText = ClassText.firstElementChild;
+  console.log(ClassText);
+  console.log(shownText);
   // code here
 </script>
