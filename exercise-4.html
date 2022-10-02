@@ -20,10 +20,9 @@
 </html>
 
 <script>
+  //codice per recuperare ogni valore dei rispetti input del documento HTML
   let inputs = document.querySelectorAll("input");
-  for (let i = 0; i < inputs.length; i++) {
-    console.log(inputs[i]);
-  }
+
   let attr = inputs[0];
   let attrType1 = attr.getAttribute("type");
   let attrId1 = attr.getAttribute("id");
@@ -39,21 +38,21 @@
   let attrId3 = attr3.getAttribute("id");
   let attrValue3 = attr3.getAttribute("value");
 
-  console.log(inputs);
-  console.log(attr);
   console.log(attrType1, attrId1, attrValue1);
 
   console.log(attrType2, attrId2, attrValue2);
   console.log(attrType3, attrId3, attrValue3);
 
-  /*
-  let input1 = document.querySelector("input");
-  let attrId = input1.getAttribute("id");
-  let attrType = input1.getAttribute("type");
-  let value = input1.getAttribute("value");
-
-  console.log(input1);
-  console.log(attrType, attrId, value);*/
+  //codice per creare l'oggetto person
+  const person = {
+    printFullName: function () {
+      console.log(`${this.firstName} ${this.lastName}`);
+    },
+  };
+  let obJ = Object.create(person);
+  obJ.firstName = "Daniele";
+  obJ.lastName = "Basile";
+  obJ.age = 33;
 
   // code here
 </script>
