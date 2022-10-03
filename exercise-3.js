@@ -1,12 +1,15 @@
-function isAdult(person) {
-  return person.age >= 18;
+function isAdult({ age }) {
+  return age >= 18;
 }
 
 const person = {
   id: 1,
-  firstName: 'Mario',
-  lastName: 'Rossi',
-  age: 25
+  firstName: "Mario",
+  lastName: "Rossi",
+  age: 25,
 };
+
+//const [age] = isAdult();
+//
 
 console.log(isAdult(person));
