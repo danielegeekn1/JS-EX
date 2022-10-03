@@ -14,7 +14,8 @@
   // code here
 
   //codice per l'attivazione dell'evento al cliccare del botton addRow
-  const eventActive = document.getElementById("click", addRow);
+  const active = document.querySelector("button");
+  active.addEventListener("click", addRow);
 
   //codice per la funzione addRow
   function addRow() {
