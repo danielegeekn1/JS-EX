@@ -12,4 +12,38 @@
 
 <script>
   // code here
+
+  //codice per l'attivazione dell'evento al cliccare del botton addRow
+  const eventActive = document.getElementById("click", addRow);
+
+  //codice per la funzione addRow
+  function addRow() {
+    //codice per creazione degli elementi
+    const tr = document.createElement("tr");
+    const tbEl = document.createElement("td");
+    const tbEl2 = document.createElement("td");
+    const tbEl3 = document.createElement("td");
+
+    //codice per creazione dei campi di testo
+    const textField1 = document.createTextNode("firstName");
+    const textField2 = document.createTextNode("lastName");
+    const textField3 = document.createTextNode("age");
+
+    //codice per inserire i contenuti di testo ai loro relativi tag td che ho creato
+
+    tbEl.appendChild(textField1);
+    tbEl2.appendChild(textField2);
+    tbEl3.appendChild(textField3);
+
+    //codice per inserire i relativi campi di testo contenuti nei tag td alla riga del tag tr
+
+    tr.appendChild(tbEl);
+    tr.appendChild(tbEl2);
+    tr.appendChild(tbEl3);
+
+    //codice per insirire la riga del tag tr al tag tbody
+    const tbody = document.querySelector("tbody");
+    tbody.appendChild(tr);
+  }
+  addRow();
 </script>
