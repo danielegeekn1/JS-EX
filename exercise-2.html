@@ -1,9 +1,25 @@
 <html>
   <body>
-    <div id="container" style="display: flex; align-items: center;"></div>
+    <div id="container" style="display: flex; align-items: center"></div>
   </body>
 </html>
 
 <script>
+  async function todo2() {
+    let response = await fetch("https://jsonplaceholder.typicode.com/todos/4");
+    let data = await response.json();
+    console.log(data);
+    let El1 = document.createElement("h2");
+    El1.innerHTML = data.title;
+
+    let El2 = document.createElement("input");
+    let El2Attr = El2.setAttribute("type", "checkbox");
+
+    let container = document.getElementById("container");
+    container.appendChild(El1);
+    container.appendChild(El2);
+  }
+
+  todo2();
   // code here
 </script>
