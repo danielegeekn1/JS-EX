@@ -18,5 +18,35 @@
 </html>
 
 <script>
+  //codice per la creazione dell'oggetto post
+  const post = {
+    title: "the hero",
+    flag: "completed",
+  };
+
+  //codice per recuperare il button, che si preme dopo la compilazione del form
+  const submit = document.getElementById("submit-todo");
+  submit.addEventListener("submit", Post);
+  async function Post() {
+    try {
+      let postFetch = await fetch(
+        "https://jsonplaceholder.typicode.com/posts",
+        {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json; charset= utf-8",
+          },
+          body: JSON.stringify(post),
+        }
+      );
+      let result = await postFetch.json();
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  Post();
+
   // code here
 </script>
