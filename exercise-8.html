@@ -15,4 +15,22 @@
 
 <script>
   // code here
+
+  //codice per recuperare i nostri elementi hero-list-item
+  const heroitem = document.querySelector(".hero-list-item");
+
+  //codice per attivare il nostro evento al passaggio del mouse, che determinata dal momento passo sopra col mouse cambi il colore di background in rosso
+  heroitem.addEventListener("mouseover", changeStyle);
+  function changeStyle() {
+    const hero_itemR = document.querySelector(".hero-list-item");
+    hero_itemR.style.backgroundColor = "red";
+  }
+  //codice per attivare l'evento che determina quando io sposto il mouse da questo elemento il backgroud color torni transparent come in origine
+  heroitem.addEventListener("mouseout", originColor);
+  function originColor() {
+    {
+      const hero_itemB = document.querySelector(".hero-list-item");
+      hero_itemB.style.backgroundColor = "transparent";
+    }
+  }
 </script>
