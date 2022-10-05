@@ -7,24 +7,31 @@ class BankAccount {
 
   deposit(amount) {
     if (amount < 0) {
-      throw new Error('The amount provided cannot be negative');
+      //throw new Error("The amount provided cannot be negative");
+      console.log(new Error("the amount provided cannot be negative"));
     }
 
     this.#amount += amount;
   }
 
   withdraw(amount) {
-    if (amount < 0) {
-      throw new Error('The amount provided cannot be negative');
-    }
+    try {
+      if (amount > 0 && this.#amount < amount) {
+        //throw new Error("The amount provided cannot be negative");
+        console.log(amount);
+      }
+    } catch (error) {
+      if (amount < 0) {
+        //throw new Error("The amount provided cannot be negative");
+        console.log(error, "red account");
+      }
 
-    if (this.#amount < amount) {
-      throw new Error('You cannot withdraw more than account balance');
+      if (this.#amount < amount) {
+        //throw new Error("You cannot withdraw more than account balance");
+        console.log(error, "the amount is negative");
+      }
     }
-
-    this.#amount -= amount;
   }
-
   view() {
     console.log(this.#amount);
   }
