@@ -1,15 +1,18 @@
-function getKeys(obj) {
+function getKeys(key) {
   // ...
-obj = Object.keys(person);
-return obj;
+  let array = [];
+  for (let value in key) {
+    array.push(value);
+  }
+  return array;
 }
 
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: "John",
+  lastName: "Doe",
   age: 32,
-  city: 'Rome',
-  job: 'Developer',
+  city: "Rome",
+  job: "Developer",
 };
 
 const keys = getKeys(person);
