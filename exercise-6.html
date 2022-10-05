@@ -10,5 +10,45 @@
 </html>
 
 <script>
+  //codice per attivare la funzione al caricamento della pagina
+  window.addEventListener("DOMContentLoaded", initForm);
+
+  //codice per creare dinamicamente il form person-Form
+  const personForm = document.createElement("person-form");
+  //codice per la funzione initForm
+  function initForm() {
+    //codice per creare i campi di testo del form
+    const text1 = document.createTextNode("firstName");
+    const text2 = document.createTextNode("lastName");
+    const text3 = document.createTextNode("age");
+
+    //codice per aggiungere i campi del testo ad appositi button per passarli poi come campi del form
+    const button1 = document.createElement("button");
+    const button2 = document.createElement("button");
+    const button3 = document.createElement("button");
+
+    const buttonText1 = button1.appendChild(text1);
+    const buttonText2 = button2.appendChild(text2);
+    const buttonText3 = button3.appendChild(text3);
+
+    //codice per aggiunger i campi di testo nei campi button, al person-form creato dinamicamente
+    const formField1btn1 = personForm.appendChild(buttonText1);
+    const formField1btn2 = personForm.appendChild(buttonText2);
+    const formField1btn3 = personForm.appendChild(buttonText3);
+  }
+
+  initForm();
+  //codice per trovare il pulsante button submit
+  const submit = document.querySelector("button");
+  submit.addEventListener("click", submitPersonForm);
+
+  //codice per attivare la funzione submitPersonForm
+  function submitPersonForm() {
+    //per prevenire comportamento di default
+    const person = {};
+
+    console.log(person);
+  }
+  submitPersonForm();
   // Code here
 </script>
