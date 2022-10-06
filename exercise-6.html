@@ -86,7 +86,31 @@
     //inserire il form generato dinamicamente nel DOM, in modo sia raffigurabile nel browser
     document.getElementsByTagName("body")[0].appendChild(personForm);
     console.log(personForm);
-  }
 
-  initForm();
+    //codice per recuperare l'elemento 'submit'
+    const submitButton = document.querySelector("button");
+
+    //codice per agganciare l'evento allo scaturire del click sul pulsante submit collegato all'unico elemento 'button'
+
+    submitButton.addEventListener("click", submitPersonForm);
+
+    //codice per la funzione submitPersonForm
+    function submitPersonForm(e) {
+      //codice per prevenire eventi di default
+      e.preventDefault();
+      //codice per la creazione di un'oggetto 'person'
+      const person = {};
+      //codice per inserire nell'oggetto creato ogni valore inserito dall'ipotetico utente nel form da noi generato dinamicamente precedentemente chiamato 'personForm'
+      let someText = document.getElementById("firstname").value;
+      person.innerHTML = someText;
+
+      let someText2 = document.getElementById("lastname").value;
+      person.innerHTML = someText2;
+
+      let someText3 = document.getElementById("age").value;
+      person.innerHTML = someText3;
+
+      console.log(person);
+    }
+  }
 </script>

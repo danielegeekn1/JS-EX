@@ -9,3 +9,4 @@ Al click del pulsante "Submit" del form richiamare il metodo `submitPersonForm`,
 - Prevenire l'evento di default che avviene al submit del form
 - Creare un oggetto `person` contenente i valori del form popolato dall'utente
 - Eseguire il `console.log` dell'oggetto `person` creato
+  //- fatto
