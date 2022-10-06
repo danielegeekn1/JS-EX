@@ -13,11 +13,13 @@
     El1.innerHTML = data.title;
 
     let El2 = document.createElement("input");
-    let El2Attr = El2.setAttribute("type", "checkbox");
+    El2.setAttribute("type", "checkbox");
 
     let container = document.getElementById("container");
     container.appendChild(El1);
     container.appendChild(El2);
+
+    El2.checked = true;
   }
 
   todo2();
