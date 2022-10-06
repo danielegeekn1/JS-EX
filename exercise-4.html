@@ -57,7 +57,7 @@
   let personJson = JSON.stringify(person);
 
   //codice per creare l'attributo 'data-person'
-  let attrCreated = document.createAttribute("data-person");
-
+  formP.dataset.person = personJson;
+  console.log(formP);
   // code here
 </script>
