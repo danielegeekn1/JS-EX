@@ -1,7 +1,9 @@
 # Dom Tree - Exercise 6
 
-Implementare il codice necessario per generare dinamicamente il form `person-form`.
-Al caricamento della pagina occorre creare ed eseguire la funzione `initForm` che si occuperà di generare dinamicamente e aggiungere al form i campi: `firstName`, `lastName` e `age`.
+Implementare il codice necessario per generare dinamicamente il form `person-form`.//-fatto
+
+Al caricamento della pagina occorre creare ed eseguire la funzione `initForm` che si occuperà di generare dinamicamente e aggiungere al form i campi: `firstName`, `lastName` e `age`.//-fatto
+
 Al click del pulsante "Submit" del form richiamare il metodo `submitPersonForm`, il quale si dovrà occupare di:
 
 - Prevenire l'evento di default che avviene al submit del form

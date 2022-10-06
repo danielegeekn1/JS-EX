@@ -10,45 +10,83 @@
 </html>
 
 <script>
-  //codice per attivare la funzione al caricamento della pagina
-  window.addEventListener("DOMContentLoaded", initForm);
+  // Code here
+  //codice necessario per creare dinamicamente il form 'person-form'
+  const personForm = document.createElement("form");
 
-  //codice per creare dinamicamente il form person-Form
-  const personForm = document.createElement("person-form");
-  //codice per la funzione initForm
+  //aggiungere funzione initform al caricamento della pagina
+  window.addEventListener("load", initForm);
+  //codice per la funzione initform, che partirà al caricamento della pagina
   function initForm() {
-    //codice per creare i campi di testo del form
-    const text1 = document.createTextNode("firstName");
-    const text2 = document.createTextNode("lastName");
-    const text3 = document.createTextNode("age");
+    //codice per la creazione degli input necessari per i campi del form
+    let inputFN = document.createElement("input");
+    let inputLN = document.createElement("input");
+    let inputAGE = document.createElement("input");
 
-    //codice per aggiungere i campi del testo ad appositi button per passarli poi come campi del form
-    const button1 = document.createElement("button");
-    const button2 = document.createElement("button");
-    const button3 = document.createElement("button");
+    //codice per la creazione degli attributi dei relativi input
+    inputFN.setAttribute("type", "text");
+    inputFN.setAttribute("id", "firstname");
+    inputFN.setAttribute("name", "firstname");
 
-    const buttonText1 = button1.appendChild(text1);
-    const buttonText2 = button2.appendChild(text2);
-    const buttonText3 = button3.appendChild(text3);
+    inputLN.setAttribute("type", "text");
+    inputLN.setAttribute("id", "lastname");
+    inputLN.setAttribute("name", "lastname");
 
-    //codice per aggiunger i campi di testo nei campi button, al person-form creato dinamicamente
-    const formField1btn1 = personForm.appendChild(buttonText1);
-    const formField1btn2 = personForm.appendChild(buttonText2);
-    const formField1btn3 = personForm.appendChild(buttonText3);
+    inputAGE.setAttribute("type", "text");
+    inputAGE.setAttribute("id", "age");
+    inputAGE.setAttribute("name", "age");
+
+    //codice per la creazione dell'elemento label, necessario per la creazione del form
+    let labelFN = document.createElement("label");
+    let labelLN = document.createElement("label");
+    let labelAGE = document.createElement("label");
+
+    //codice per l'attribuzione dell'attributo for necessario per il label
+    labelFN.setAttribute("for", "firstname");
+    labelLN.setAttribute("for", "lastname");
+    labelAGE.setAttribute("for", "age");
+
+    let labelFNplaceHolder = (labelFN.innerHTML = "firstname");
+    labelLN.innerHTML = "lastname";
+    labelAGE.innerHTML = "age";
+
+    //codice per la creazione del button submit del form
+    let submitFN = document.createElement("button");
+    let submitLN = document.createElement("button");
+    let submitAGE = document.createElement("button");
+
+    submitFN.setAttribute("type", "submit");
+    submitFN.setAttribute("form", "personform");
+    submitFN.setAttribute("value", "submit");
+
+    submitLN.setAttribute("type", "submit");
+    submitLN.setAttribute("form", "personform");
+    submitLN.setAttribute("value", "submit");
+
+    submitAGE.setAttribute("type", "submit");
+    submitAGE.setAttribute("form", "personform");
+    submitAGE.setAttribute("value", "submit");
+
+    personForm.setAttribute("id", "personform");
+    //codice per porre l'elemento label, esattamente sotto il relativo elemento input
+    //ex sotto primo input per il first name, il relativo label per il firstname
+    inputFN.appendChild(labelFN);
+    inputLN.appendChild(labelLN);
+    inputAGE.appendChild(labelAGE);
+
+    //codice per aggiungere gli input con i relativi label al form creato dinamicamente 'personForm'
+    personForm.appendChild(inputFN);
+    personForm.appendChild(inputLN);
+    personForm.appendChild(inputAGE);
+
+    inputFN.appendChild(submitFN);
+    inputLN.appendChild(submitLN);
+    inputAGE.appendChild(submitAGE);
+
+    //inserire il form generato dinamicamente nel DOM, in modo sia raffigurabile nel browser
+    document.getElementsByTagName("body")[0].appendChild(personForm);
+    console.log(personForm);
   }
 
   initForm();
-  //codice per trovare il pulsante button submit
-  const submit = document.querySelector("button");
-  submit.addEventListener("click", submitPersonForm);
-
-  //codice per attivare la funzione submitPersonForm
-  function submitPersonForm() {
-    //per prevenire comportamento di default
-    const person = {};
-
-    console.log(person);
-  }
-  submitPersonForm();
-  // Code here
 </script>
