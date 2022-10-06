@@ -45,20 +45,16 @@
 
   //codice per creare l'oggetto person
   const person = {
-    printFullName: function () {
-      console.log(`${this.firstName} ${this.lastName}`);
-    },
+    firstName: "Daniele",
+    lastName: "Basile",
+    age: 33,
   };
-  let obJ = Object.create(person);
-  obJ.firstName = "Daniele";
-  obJ.lastName = "Basile";
-  obJ.age = 33;
 
   //codice per recuperare l'elemento form
   let formP = document.querySelector("form");
 
   //codice per convertire l'oggetto person in formato JSON
-  let personJson = JSON.stringify(obJ);
+  let personJson = JSON.stringify(person);
 
   //codice per creare l'attributo 'data-person'
   let attrCreated = document.createAttribute("data-person");
