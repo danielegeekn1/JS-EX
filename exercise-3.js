@@ -42,5 +42,5 @@ try {
   bankAccount.withdraw(10000);
   bankAccount.view();
 } catch (e) {
-  console.log("Something went wrong during bank account operations");
+  console.log("Something went wrong during bank account operations", e);
 }
