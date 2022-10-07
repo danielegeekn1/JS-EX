@@ -2,6 +2,11 @@ class Square {
   constructor(side) {
     this.side = side;
   }
+  static squareCalc(side) {
+    this.side = side;
+    let squareArea = side * side;
+    return squareArea;
+  }
 }
 
 class Rectangle {
@@ -9,11 +14,21 @@ class Rectangle {
     this.width = width;
     this.height = height;
   }
+  static rectangleCalc(width, heigth) {
+    this.heigth = heigth;
+    this.width = width;
+    let rectangleArea = width * heigth;
+    return rectangleArea;
+  }
 }
 
 class Circle {
   constructor(radius) {
     this.radius = radius;
+  }
+  static circleCalc(radius) {
+    this.radius = radius;
+    return Math.PI * radius * radius;
   }
 }
 
