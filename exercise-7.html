@@ -48,7 +48,7 @@
     console.log(person);
   }
 
-  function initForm() {
+  function initForm(e) {
     const firstNameInput = generateFormInputField(
       "type",
       "firstName",
@@ -69,7 +69,17 @@
     form.prepend(firstNameInput);
 
     form.addEventListener("submit", submitPersonForm);
+
+    addEventListener("personFromLoaded", load);
+    dispatchEvent(personFromLoaded);
   }
 
   window.addEventListener("DOMContentLoaded", initForm);
+
+  //codice per creazione custom event
+  let personFromLoaded = new Event("personFromLoaded");
+
+  function load() {
+    console.log("Person From Loaded");
+  }
 </script>
