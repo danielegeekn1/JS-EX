@@ -20,12 +20,8 @@
 </html>
 
 <script>
-  //codice per veder solo il contenuto di testo 'First Name' recuperando l'elemento dalla classe
-  let myOtherClass = document.querySelector(".form-input");
-  let ClassText = myOtherClass.parentNode;
-  let shownText = ClassText.firstElementChild;
-  let textFieldN = shownText.innerText;
-
-  console.log(textFieldN);
+  let input = document.getElementById("firstName");
+  let inputValue = input.value;
+  console.log(inputValue);
   // code here
 </script>
