@@ -47,5 +47,15 @@ fetchPersonById(3)
     console.log(err);
   });
 */
-
 // code here
+async function alias() {
+  let firstId = await fetchPersonById(1);
+  console.log(firstId);
+  let secondId = await fetchPersonById(2);
+  console.log(secondId);
+  let thirdId = await fetchPersonById(3);
+  console.log(thirdId);
+  let fourthId = await fetchPersonById(4);
+  console.log(fourthId);
+}
+alias();
