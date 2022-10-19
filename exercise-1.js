@@ -8,14 +8,14 @@ class BankAccount {
   deposit(amount) {
     // throw an exception if amount is negative
     if (amount < 0) {
-      throw new Error("negative amount -  operation is not accepted");
+      throw new Error("negative amount -  operation is not allowed");
     }
     this.#amount += amount;
   }
 
   withdraw(amount) {
     if (amount < 0 || this.#amount < amount) {
-      throw new Error("red account - account blocked");
+      throw new Error("red account - your account is blocked");
     }
     // throw an exception if amount is negative or if withdrawal amount is greater than current amount
     this.#amount -= amount;
